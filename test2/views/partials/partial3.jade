@@ -1,0 +1,22 @@
+.row-fluid.col-md-12
+  table.table.table-hover
+    .caption
+      h1 Productos Disponibles 
+    thead
+      tr
+        th #
+        th Title
+        th Price
+        th Options
+        th
+        th
+      tr(ng-repeat="p in products")
+        th {{p.id}}
+        th {{p.title}}
+        th {{p.price}}
+        th 
+          a.btn.btn-danger(href="/admin/delete/:{{p.id}}") Delete
+        th
+          a.btn.btn-info(href="/admin/update/:{{p.id}}") Update
+        th
+          a.btn.btn-default(href="/admin/detail/:{{p.id}}") Detail

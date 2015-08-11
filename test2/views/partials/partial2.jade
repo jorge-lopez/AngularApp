@@ -1,0 +1,14 @@
+
+.row
+	.col-lg-4
+		.thumbnail(style="min-height:15em; position:relative;")
+			a(style="margin:0; position: absolute; top:50%; transform: translate(0,-50%);")
+				img(ng-src="{{product.img}}")										
+			
+	.col-lg-6.col-lg-offset-2
+		.caption
+			h2 {{product.title}}
+			h3 {{product.price}}
+			p {{product.description}}
+			p
+				a.btn.btn-primary(href="#") Button

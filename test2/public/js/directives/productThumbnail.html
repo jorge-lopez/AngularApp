@@ -1,0 +1,16 @@
+<li class="col-lg-3">
+  <div class="thumbnail">
+    <div style="min-height:15em; position:relative;">
+        <a href="/product/:{{info.id}}" style="margin:0; position: absolute; top:50%; transform: translate(0,-50%);">
+          <img class="icon" ng-src="{{info.img}}" >
+        </a>
+    </div>
+    <div class="caption">
+      <h4>{{info.title}}</h4>
+      <p>{{ info.price | currency }}</p>
+      <p>
+        <a href="/product/:{{info.id}}" class="btn btn-primary" role="button">Button</a>
+      </p>
+    </div>
+  </div>
+</li>
